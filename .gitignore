@@ -3,5 +3,4 @@ site
 target
 *.pyd
 __pycache__
-textgrid/tests
-benchmarks/*.csv
+benchmarks
