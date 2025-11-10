@@ -1,0 +1,44 @@
+site_name: pytextgrid
+site_description: "Rust-powered Praat TextGrid utilities for Python"
+site_author: pytextgrid contributors
+
+nav:
+    - Home: index.md
+    - API Reference:
+          - pytextgrid package: api.md
+    - Benchmarks: benchmarks.md
+
+theme:
+    name: material
+    palette:
+        - scheme: default
+          primary: blue
+          accent: deep orange
+
+plugins:
+    - search
+    - mkdocstrings:
+          handlers:
+              python:
+                  setup_commands:
+                      - import pathlib, sys
+                      - sys.path.insert(0, str(pathlib.Path('.').resolve()))
+                  options:
+                      docstring_style: numpy
+                      show_source: true
+                      summary: true
+                      filters: ["!^_"]
+
+markdown_extensions:
+    - admonition
+    - toc:
+          permalink: true
+    - footnotes
+    - def_list
+    - pymdownx.highlight:
+          anchor_linenums: true
+    - pymdownx.superfences
+
+watch:
+    - pytextgrid
+    - docs
