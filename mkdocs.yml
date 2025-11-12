@@ -20,9 +20,6 @@ plugins:
     - mkdocstrings:
           handlers:
               python:
-                  setup_commands:
-                      - import pathlib, sys
-                      - sys.path.insert(0, str(pathlib.Path('.').resolve()))
                   options:
                       docstring_style: numpy
                       show_source: true
