@@ -3,3 +3,4 @@ site
 target
 *.pyd
 __pycache__
+.vscode
