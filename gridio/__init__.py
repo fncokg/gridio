@@ -30,7 +30,7 @@ if TYPE_CHECKING:  # pragma: no cover - for type checkers only
     )
 
 
-__version__ = "1.0.1"
+__version__ = "1.0.5"
 
 
 def _file_name(
