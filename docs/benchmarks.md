@@ -141,7 +141,7 @@ The table below shows mean execution time across 5 runs, with standard deviation
 
 ### Visualization
 
-![Benchmark Results](./figures/benchmark_plot.png)
+![Benchmark Results](https://github.com/fncokg/gridio/blob/master/benchmarks/results/benchmark_plot.png?raw=true)
 
 *Figure: Comparison of execution times for parsing 5,000 TextGrid files. The bars show mean execution time with error bars indicating standard deviation. Numbers on bars indicate absolute time (seconds) and relative speedup (x) compared to the fastest method. The x axis has been sqrt-scaled for clarity.*
 
